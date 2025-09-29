@@ -126,7 +126,7 @@ class authController {
         const isUser = await authModel.findOne({ email: email });
         if (isUser) {
           // generate token
-          const secretKey = isUser._id + "pleaseSubscribe";
+          const secretKey = isUser._id
 
           const token = jwt.sign({ userID: isUser._id }, secretKey, {
             expiresIn: "5m",
