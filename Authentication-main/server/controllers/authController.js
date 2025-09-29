@@ -19,7 +19,7 @@ class authController {
 
           // Generate Token
 
-          const secretKey = "welcomeToCodeWithviju";
+          const secretKey = "welcomethisisVishal";
 
           const token = jwt.sign({ email: email }, secretKey, {
             expiresIn: "10m",
