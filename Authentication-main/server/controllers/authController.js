@@ -295,7 +295,7 @@ class authController {
         if (newPassword === confirmPassword) {
           // token verifiying
           const isUser = await authModel.findById(id);
-          const secretKey = isUser._id + "pleaseSubscribe";
+          const secretKey = isUser._id 
           const isValid = await jwt.verify(token, secretKey);
           if (isValid) {
             // password hashing
