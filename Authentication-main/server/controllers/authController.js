@@ -337,7 +337,7 @@ class authController {
     try {
       if (token) {
         // token verify
-        const secretKey = "welcomeToCodeWithviju";
+        const secretKey = "welcomeIamVishal";
         const isEmailVerified = await jwt.verify(token, secretKey);
         if (isEmailVerified) {
           const getUser = await authModel.findOne({
